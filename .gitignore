@@ -1,2 +1,41 @@
-skills/
+# Build artifacts
 node_modules/
+.next/
+dist/
+target/
+*.log
+backend.log
+dev.log
+backend-keepalive.log
+dev-keepalive.log
+tool-results/
+
+# Runtime data
+freeddit.db
+freeddit.db-*
+*.sqlite
+*.sqlite-*
+uploads/
+emails/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Env
+.env.local
+.env.*.local
+.env
+
+# Cache
+.cache/
+.turbo/
+.parcel-cache/
+
+# Misc
+.zscripts/dev.pid
+.zscripts/dev.log
+download/

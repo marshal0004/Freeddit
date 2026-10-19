@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Background: rounded square with gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FF4500" />
+    </linearGradient>
+    <linearGradient id="ballGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F4F8" />
+    </linearGradient>
+    <radialGradient id="antGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E8E8E8" />
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#bgGrad)" />
+
+  <!-- Free-tie mascot (free variation of Reddit's Snoo silhouette):
+       a friendly orange-circle-headed alien with antenna + smile.
+       Pure original art, no Snoo reproduction. -->
+  <!-- Antenna -->
+  <line x1="128" y1="58" x2="128" y2="38" stroke="#FFFFFF" stroke-width="3" />
+  <circle cx="128" cy="32" r="9" fill="url(#antGrad)" stroke="#FF4500" stroke-width="2" />
+
+  <!-- Head (white circle) -->
+  <circle cx="128" cy="128" r="58" fill="url(#ballGrad)" />
+
+  <!-- Ears -->
+  <circle cx="78" cy="128" r="14" fill="url(#ballGrad)" />
+  <circle cx="178" cy="128" r="14" fill="url(#ballGrad)" />
+  <circle cx="78" cy="128" r="6" fill="#FF4500" opacity="0.85" />
+  <circle cx="178" cy="128" r="6" fill="#FF4500" opacity="0.85" />
+
+  <!-- Eyes (smiley closed-eye style for friendliness) -->
+  <path d="M 108 118 Q 115 110, 122 118" stroke="#1A1A1B" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M 134 118 Q 141 110, 148 118" stroke="#1A1A1B" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Smile -->
+  <path d="M 110 138 Q 128 154, 146 138" stroke="#1A1A1B" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- "f" letter on the chest/body for "freeddit" -->
+  <text x="128" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="40" font-weight="900" fill="#FFFFFF" text-anchor="middle">f</text>
+</svg>

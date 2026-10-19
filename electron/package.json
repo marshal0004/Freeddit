@@ -1,0 +1,16 @@
+{
+  "name": "freeddit-electron",
+  "version": "0.1.0",
+  "description": "Freeddit desktop app — Electron wrapper around the Next.js frontend",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  },
+  "dependencies": {
+    "electron-serve": "^1.3.0"
+  }
+}
