@@ -1,0 +1,25 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/z/.cache/ms-playwright/chromium-1200/chrome-linux64/chrome",
+    "headless": false
+  },
+  "start_url": { "url": "https://www.reddit.com/r/programming/" },
+  "actions": [
+    {
+      "step_id": "initial_load",
+      "action": "wait_for_timeout",
+      "duration_ms": 15000
+    }
+  ],
+  "capture": {
+    "after_each_step": ["screenshot", "dom", "accessibility", "url", "history", "storage"],
+    "at_end": ["screenshot", "dom", "accessibility", "url", "history", "storage"],
+    "events": ["console", "page-errors", "network", "websockets", "frames", "workers", "popups", "downloads"],
+    "network": {
+      "request_body": true,
+      "response_body": true,
+      "header_values": true
+    }
+  }
+}
