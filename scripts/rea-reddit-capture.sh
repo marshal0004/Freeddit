@@ -45,7 +45,7 @@ warn() { echo -e "${YELLOW}[warn]${NC} $1"; }
 err() { echo -e "${RED}[error]${NC} $1" >&2; }
 
 OUTPUT_DIR="$HOME/rea-output"
-mkdir -p "$OUTPUTDIR"
+mkdir -p "$OUTPUT_DIR"
 
 # === Step 0: Check prerequisites ===
 log "Step 0: Checking prerequisites..."
